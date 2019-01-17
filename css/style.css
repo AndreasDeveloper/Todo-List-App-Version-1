@@ -1,0 +1,87 @@
+/* ---- TO-DO LIST CSS ---- */
+
+/* Main Body */ 
+body {
+    font-family: 'Roboto';
+    background: linear-gradient(75.83565642546739deg, rgba(73, 197, 242,1) 20.93359375%,rgba(72, 196, 241,1) 20.93359375%,rgba(0, 83, 237,1) 81.19401041666667%);
+}
+
+/* Todo List Main Container */
+.container {
+    background: #f7f7f7;
+    box-shadow: 0 0 .3rem rgba(0, 0, 0, .1);
+    width: 360px;
+    margin: 10rem auto;
+}
+
+/* H1 Element | Header */ 
+h1 {
+    background: #2980b9;
+    color: white;
+    font-size: 1.9rem;
+    font-weight: normal;
+    margin: 0;
+    padding: .6rem 1.6rem; 
+    text-transform: uppercase;
+}
+.add-icon {
+    float: right;
+}
+
+/* Input Field */
+.input-field {
+    box-sizing: border-box;
+    background: #f7f7f7;
+    color: #2980b9;
+    font-size: 1.6rem;
+    padding: .5rem .5rem .5rem 1.2rem;
+    width: 100%;
+    border: 3px solid rgba(0, 0, 0, 0);
+}
+.input-field:focus {
+    background: white;
+    border: 3px solid #2980b9;
+    outline: none;
+}
+
+/* UL Element */ 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* List Elements */ 
+li {
+    background: white;
+    color: #666;
+    cursor: pointer;
+    height: 2rem;
+    line-height: 2rem;
+}
+/* Every second li */
+li:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+/* Span Elements */ 
+span {
+    background: #e74c3c;
+    color: white;
+    margin-right: 20px;
+    text-align: center;
+    width: 0px;
+    display: inline-block;
+    opacity: 0;
+    transition: all .2s linear;
+}
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+
+/* Completed Styles for li elements */
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
